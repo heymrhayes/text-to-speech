@@ -15,11 +15,15 @@
     <button type="button" class="mdc-button mdc-button--raised">
       Press Me
     </button>
+    
+    
+    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 
     <script>
+        // register the service worker for offline use
         if('serviceWorker' in navigator) {
           navigator.serviceWorker
                    .register('./sw.js')
@@ -27,15 +31,21 @@
         }
         
         
-        // $("button").on("click", function() {
-        //   sayIt($(this).text());
-        // });
-        
+        // reusable function to use the speech API
         
         // function sayIt (setOfWords) {
         //   var msg = new SpeechSynthesisUtterance(setOfWords);
         //   window.speechSynthesis.speak(msg);
         // }
+        
+        
+            
+        // hook up event handler on the buttons
+        
+        // $("button").on("click", function() {
+        //   sayIt($(this).text());
+        // });
+        
         
       
     </script>
