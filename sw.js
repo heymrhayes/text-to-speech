@@ -1,7 +1,6 @@
 /*
  *
- *  Air Horner
- *  Copyright 2015 Google Inc. All rights reserved.
+ *  Text to Speech (copied from Air Horner)
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -17,8 +16,8 @@
  *
  */
 
-// Version 0.6.2
-let version = '0.6.2';
+// Version 1.0.0
+let version = '1.0.0';
 
 self.addEventListener('install', e => {
   let timeStamp = Date.now();
