@@ -33,18 +33,18 @@
         
         // reusable function to use the speech API
         
-        // function sayIt (setOfWords) {
-        //   var msg = new SpeechSynthesisUtterance(setOfWords);
-        //   window.speechSynthesis.speak(msg);
-        // }
+         function sayIt (setOfWords) {
+           var msg = new SpeechSynthesisUtterance(setOfWords);
+           window.speechSynthesis.speak(msg);
+         }
         
         
             
         // hook up event handler on the buttons
         
-        // $("button").on("click", function() {
-        //   sayIt($(this).text());
-        // });
+         $("button").on("click", function() {
+           sayIt($(this).text());
+         });
         
         
       
