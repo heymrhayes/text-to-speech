@@ -39,6 +39,9 @@
     
     <h1 class="mdc-typography--display1"></h1>
     
+    <textarea style="width:100%; margin: 10px;></textarea>
+                     <button id="btnSayText">Say It</button><br><br>           
+    
     
     <button type="button" class="mdc-button mdc-button--raised">
       Hello Holy Angels 8th grade!
@@ -106,10 +109,16 @@
             
         // hook up event handler on the buttons
         
-         $("button").on("click", function() {
+         $("button").not("#btnSayText").on("click", function() {
            sayIt($(this).text());
          });
-        
+         
+         $("#btnSayText").on("click", function() {
+           sayIt($("textarea").val());
+         });
+                               
+                               
+                               
 
 
 
