@@ -13,7 +13,15 @@
   
     <!-- material icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">  
+      rel="stylesheet">
+    
+    <!-- styles -->
+    <style>
+      body {background-color: white;}
+      
+      
+    </style>
+    
   </head>
   <body>
     <header class="mdc-toolbar">
@@ -27,7 +35,7 @@
     </header>
     
     
-    <!---  UI Items to Modify --->
+    <!--  UI Items to Modify -->
     
     <h1 class="mdc-typography--display1">Hello, World!</h1>
     
@@ -59,7 +67,7 @@
 
     <script>
         // register the service worker for offline use
-        if('serviceWorker' in navigator) {
+        if(false and 'serviceWorker' in navigator) {
           navigator.serviceWorker
                    .register('./sw.js')
                    .then(function() { console.log("Service Worker Registered"); });
