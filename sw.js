@@ -16,13 +16,15 @@
  *
  */
 
-// Version 1.0.0
-let version = '1.0.0';
+// Version 1.1
+let version = '1.1';
+
+let cacheName = 'textToSpeech_' + version;
 
 self.addEventListener('install', e => {
   let timeStamp = Date.now();
   e.waitUntil(
-    caches.open('textToSpeech').then(cache => {
+    caches.open(cacheName).then(cache => {
       return cache.addAll([
         `./`,
         `./index.html`
