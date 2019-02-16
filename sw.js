@@ -16,8 +16,8 @@
  *
  */
 
-// Version 1.1
-let version = '1.1';
+
+let version = '20190216';
 
 let cacheName = 'textToSpeech_' + version;
 
