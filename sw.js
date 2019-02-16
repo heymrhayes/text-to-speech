@@ -17,9 +17,9 @@
  */
 
 
-let version = '20190216';
+//version = '20190216';
 
-let cacheName = 'textToSpeech_' + version;
+let cacheName = 'textToSpeech';
 
 self.addEventListener('install', e => {
   let timeStamp = Date.now();
